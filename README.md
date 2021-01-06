@@ -8,4 +8,26 @@ This is the repository that will be used for the team = {"name": "Join The Progr
 
 ## Installation
 
-    Code Block
+Here are the instructions on how to install our S01ar Sys app.
+
+### From Source
+
+    $ git clone https://github.com/JoinTheProgrammingSide/S01ar-Sys.git
+    $ cd S01ar-Sys/
+    $ npm init
+    $ npm i electron --save-dev
+    $ npm i electron-packager --save-dev
+    $ npm build
+
+If you want to run the app without packaging you can follow these steps.
+
+    $ git clone https://github.com/JoinTheProgrammingSide/S01ar-Sys.git
+    $cd S01ar-Sys/
+    $ npm init
+    $ npm i electron
+    $ npm start
+
+### From Release
+
+- Follow this link to the latest release: LINK
+- Download the latest release
