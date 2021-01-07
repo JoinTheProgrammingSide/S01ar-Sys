@@ -31,3 +31,7 @@ If you want to run the app without packaging you can follow these steps.
 
 - Follow this link to the latest release: LINK
 - Download the latest release
+- Extract the files
+- Run the installer
+
+## Features
