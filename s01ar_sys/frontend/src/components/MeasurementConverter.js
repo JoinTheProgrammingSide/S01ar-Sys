@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-export default class MeasurementConversionPage {
+export default class MeasurementConversionPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,6 +17,3 @@ export default class MeasurementConversionPage {
         );
     }
 }
-
-const appDiv = document.getElementById("app");
-render(<MeasurementConverter />, appDiv);
