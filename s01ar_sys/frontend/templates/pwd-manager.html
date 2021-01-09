@@ -11,13 +11,32 @@
     <body>
         <div id="header">
             <header>
-                <h1>S01ar Sys</h1>
+                <a onclick="window.location='/'"><h1>S01ar Sys</h1></a>
             </header>
             <div id="nav">
-                <div class="menubar">
+                <!-- <div class="menubar">
                     <a href="pwd-manager.html" id="pwd-manager-link">Pwd Manager</a>
-                </div>
+                </div> -->
                 <button id="nav-button"></button>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Pwd Manager</h1>
+
+            <div id="features">
+                <div class="feature" id="create-pwd">
+                    <h2>Create a Password</h2>
+                    <button id="create-logo" onclick="window.location='/pwd'">Create Logo</button>
+                </div>
+                <div class="feature" id="view-pwd">
+                    <h2>View a Password</h2>
+                    <button id="view-logo" onclick="window.location='/pwd'">View Logo</button>
+                </div>
+                <div class="feature" id="remove-pwd">
+                    <h2>Delete a Password</h2>
+                    <button id="remove-logo" onclick="window.location='/pwd'">Delete Logo</button>
+                </div>
             </div>
         </div>
     </body>

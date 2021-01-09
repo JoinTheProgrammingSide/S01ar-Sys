@@ -21,6 +21,7 @@ body {
   left: 30px;
   top: 10px;
   font-family: "Courier New";
+  cursor: pointer;
 }
 
 /* needs better vertical alignement */
@@ -32,6 +33,7 @@ body {
   border: none;
   height: 24px;
   width: 29px;
+  cursor: pointer;
 }
 
 #header #nav #nav-button:before {
@@ -86,10 +88,13 @@ body {
   margin: 10px;
 }
 
+/* Needs better alignment */
 .feature button {
   margin-top: 50px;
   background: none;
   border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1376px) {

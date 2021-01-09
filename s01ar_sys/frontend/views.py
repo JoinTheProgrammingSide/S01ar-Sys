@@ -7,3 +7,10 @@ class index(View):
 
     def get(self, request):
         return render(request, self.template)
+
+
+class pwd_manager(View):
+    template = 'pwd-manager.html'
+
+    def get(self, request):
+        return render(request, self.template)

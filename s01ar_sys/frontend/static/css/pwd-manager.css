@@ -21,6 +21,7 @@ body {
   left: 30px;
   top: 10px;
   font-family: "Courier New";
+  cursor: pointer;
 }
 
 /* needs better vertical alignement */
@@ -32,6 +33,7 @@ body {
   border: none;
   height: 24px;
   width: 29px;
+  cursor: pointer;
 }
 
 #header #nav #nav-button:before {
@@ -44,4 +46,54 @@ body {
   background: #fff;
   box-shadow: 0 7.5px 0 0 white, 0 15px 0 0 white;
   border-radius: 5px;
+}
+
+#main {
+  margin-top: 120px;
+}
+
+#main h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.feature {
+  text-align: center;
+  background-color: #484848;
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+.feature h2 {
+  font-family: Verdana;
+  font-weight: 800;
+  font-size: 36px;
+}
+.feature button {
+  position: relative;
+  top: 200px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1376px) {
+  /* Change from horizontal layout to vertical */
+  #features {
+    display: block;
+  }
+  .feature {
+    margin: 0 auto;
+  }
 }
