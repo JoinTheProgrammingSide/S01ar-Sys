@@ -14,3 +14,10 @@ class pwd_manager(View):
 
     def get(self, request):
         return render(request, self.template)
+
+
+class measurement_converter(View):
+    template = 'measurement_converter.html'
+
+    def get(self, request):
+        return render(request, self.template)
