@@ -9,14 +9,15 @@ def convert(from_unit, to_unit, amount):
         units = json.load(f)
 
         try:
-            rate = units[f"{from_unit}-{to_unit}"]
+            unit = f"{from_unit}-{to_unit}"
+            rate = units[unit]
 
-            converted = int(amount) * int(rate)
+            converted = int(amount) * float(rate)
 
             return {
                 "amount": converted
             }
         except KeyError:
             return {
-                "Not Found": "unit not found."
+                "Not Found": f"{from_unit}-{to_unit}"
             }

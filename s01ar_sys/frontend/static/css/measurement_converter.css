@@ -107,3 +107,13 @@ body {
   border-radius: 20px;
   transition: 0.5s ease-in;
 }
+
+#result {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #484848;
+  padding: 2% 0 2%;
+  border-radius: 40px 40px 0 0;
+}
