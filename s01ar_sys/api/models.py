@@ -5,4 +5,4 @@ from django.db.models.fields import CharField, IntegerField
 class MeasurementConvertModel(models.Model):
     from_unit = CharField(max_length=20, unique=False)
     to_unit = CharField(max_length=20, unique=False)
-    amount = IntegerField(null=False, default=1)
+    amount = CharField(max_length=100, unique=False)
