@@ -17,6 +17,8 @@ This is the repository that will be used for the team = {"name": "Join The Progr
 - Clip Board
 - Idk
 
+None of these features save changes, therefore are not fit to use as a replacement for other applications.
+
 ---
 
 ## Usage
