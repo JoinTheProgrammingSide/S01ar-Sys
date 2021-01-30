@@ -7,6 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import MeasurementConverter from "./MeasurementConverter";
+import NotePad from "./NotePad";
 
 export default class RouterPage extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ export default class RouterPage extends Component {
       <Router>
         <Switch>
           <Route path="/measurement" component={MeasurementConverter} />
+          <Route path="/note" component={NotePad} />
         </Switch>
       </Router>
     );

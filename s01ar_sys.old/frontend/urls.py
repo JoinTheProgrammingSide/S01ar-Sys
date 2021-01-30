@@ -5,5 +5,6 @@ urlpatterns = [
     path('', index.as_view()),
     path('pwd', pwd_manager.as_view(), name="pwd_manager"),
     path('measurement', measurement_converter.as_view(),
-         name="measurement_conversion")
+         name="measurement_conversion"),
+    path('note', note_pad.as_view(), name="note_pad")
 ]

@@ -21,3 +21,10 @@ class measurement_converter(View):
 
     def get(self, request):
         return render(request, self.template)
+
+
+class note_pad(View):
+    template = 'note-pad.html'
+
+    def get(self, request):
+        return render(request, self.template)
