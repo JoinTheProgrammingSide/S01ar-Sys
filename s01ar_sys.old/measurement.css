@@ -1,0 +1,235 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #242424;
+  color: #fff;
+}
+
+/* nicer outline */
+:focus {
+  outline: thin dotted;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #242424;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 5px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #121212;
+  border-radius: 0 0 30px 30px;
+}
+
+#header header h1 {
+  position: fixed;
+  left: 30px;
+  top: 10px;
+  font-family: "Courier New";
+  cursor: pointer;
+}
+
+#header #nav #navBtn {
+  position: fixed;
+  top: 30px;
+  right: 18px;
+  background: none;
+  border: none;
+  height: 24px;
+  width: 29px;
+  cursor: pointer;
+}
+
+#header #nav #navBtn:before {
+  content: "";
+  position: fixed;
+  top: 33px;
+  right: 20px;
+  width: 25px;
+  height: 5px;
+  background: #fff;
+  box-shadow: 0 7.5px 0 0 white, 0 15px 0 0 white;
+  border-radius: 5px;
+}
+
+#main {
+  margin-top: 120px;
+}
+
+#main h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+}
+
+#menu {
+  display: none;
+  background-color: #969696;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#menu #navClose {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#menu ul {
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #121212;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#menu ul #settings {
+  position: fixed;
+  bottom: 0;
+}
+
+#menu button {
+  background: none;
+  border: none;
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#converter {
+  text-align: center;
+  background-color: #484848;
+  width: 40%;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 50px;
+}
+
+input[name="fromUnit"] {
+  text-align: center;
+  height: 15px;
+  width: 150px;
+  margin-bottom: 30px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 3px solid #242424;
+  border-radius: 3px;
+  outline: transparent;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[name="fromUnit"]:focus {
+  border-color: #969696;
+  width: 200px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[name="toUnit"] {
+  text-align: center;
+  height: 15px;
+  width: 150px;
+  margin-bottom: 30px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 3px solid #242424;
+  border-radius: 3px;
+  outline: transparent;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[name="toUnit"]:focus {
+  border-color: #969696;
+  width: 200px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[name="value"] {
+  text-align: center;
+  height: 15px;
+  width: 150px;
+  margin-bottom: 30px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 3px solid #242424;
+  border-radius: 3px;
+  outline: transparent;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[name="value"]:focus {
+  border-color: #969696;
+  width: 200px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button[name="calculate"] {
+  margin-top: 30px;
+  background: none;
+  border: 3px solid #242424;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+button[name="calculate"]:hover {
+  border-color: #969696;
+  border-radius: 20px;
+  padding: 5px 30px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button[name="calculate"]:focus {
+  border-color: #969696;
+  border-radius: 20px;
+  padding: 5px 30px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+textarea[name="output"] {
+  background: none;
+  border: none;
+  border: 3px solid #242424;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3;
+  resize: none;
+  height: 50px;
+  width: 200px;
+  position: relative;
+  top: 160px;
+  outline: none;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S01ar Sys</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <style>
+
+        </style>
+
+        <div id="header">
+            <header>
+                <a onclick="window.location.assign('/')"><h1>S01ar Sys</h1></a>
+            </header>
+            <div id="nav">
+                <button id="navBtn"></button>
+                <div id="menu">
+                    <button id="navClose">X</button>
+                    <ul>
+                        <li>
+                            <a href="pwd.html"><i>Imagio</i>Pwd Manager</a>
+                        </li>
+                        <li>
+                            <a href="currency.html"><i>Imagio</i>Currency Conversion</a>
+                        </li>
+                        <li>
+                            <a href="note.html"><i>Imagio</i>Note Pad</a>
+                        </li>
+                        <li>
+                            <a href="measurement.html"><i>Imagio</i>Measurement Conversion</a>
+                        </li>
+                        <li id="settings">
+                            <a href="settings.html"><i>Imagio</i>Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Welcome</h1>
+
+            <div id="features">
+                <div class="feature" id="pwdMan">
+                    <h2>Pwd Manager</h2>
+                    <p>Here you can create, store and view secure passwords.</p>
+                    <button id="pwdLogo" onclick="window.location='/pwd.html'">Pwd Logo</button>
+                </div>
+                <div class="feature" id="currConv">
+                    <h2>Currency Conversion</h2>
+                    <p>Here you can convert from a currency to an other.</p>
+                    <button id="currLogo" onclick="window.location='/currency.html'">Currency Logo</button>
+                </div>
+                <div class="feature" id="notePad">
+                    <h2>Note Pad</h2>
+                    <p>Here you can write and view notes.</p>
+                    <button id="noteLogo" onclick="window.location='/note.html'">Note Logo</button>
+                </div>
+                <div class="feature" id="measurementConversion">
+                    <h2>Measurement Conversion</h2>
+                    <p>Here you can convert from a measurement unit to an other.</p>
+                    <button id="measurementLogo" onclick="window.location='/measurement.html'">Measure Logo</button>
+                </div>
+                <div class="feature" id="clipBoard">
+                    <h2>Clip Board</h2>
+                    <p>Here you can paste and copy any text you want.</p>
+                    <button id="clipLogo" onclick="window.location='/clipboard.html'">Clip Board</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

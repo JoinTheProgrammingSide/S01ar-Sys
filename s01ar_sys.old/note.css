@@ -1,0 +1,213 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #242424;
+  color: #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #242424;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 5px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #121212;
+  border-radius: 0 0 30px 30px;
+}
+
+#header header h1 {
+  position: fixed;
+  left: 30px;
+  top: 10px;
+  font-family: "Courier New";
+  cursor: pointer;
+}
+
+#header #nav #navBtn {
+  position: fixed;
+  top: 30px;
+  right: 18px;
+  background: none;
+  border: none;
+  height: 24px;
+  width: 29px;
+  cursor: pointer;
+}
+
+#header #nav #navBtn:before {
+  content: "";
+  position: fixed;
+  top: 33px;
+  right: 20px;
+  width: 25px;
+  height: 5px;
+  background: #fff;
+  box-shadow: 0 7.5px 0 0 white, 0 15px 0 0 white;
+  border-radius: 5px;
+}
+
+#main {
+  margin-top: 120px;
+}
+
+#main h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+}
+
+#notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.note {
+  text-align: center;
+  background-color: #484848;
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50px;
+}
+
+.note button {
+  background: none;
+  border: 3px solid #969696;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+
+.note button:hover {
+  background-color: crimson;
+  color: #000;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media only screen and (max-width: 1376px) {
+  #notes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  #notes {
+    display: block;
+  }
+  .note {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#menu {
+  display: none;
+  background-color: #969696;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#menu #navClose {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#menu ul {
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #121212;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#menu ul #settings {
+  position: fixed;
+  bottom: 0;
+}
+
+.helperText {
+  position: relative;
+  top: 12px;
+  font-size: 13px;
+  color: #969696;
+}
+
+input[name="title"] {
+  width: 150px;
+  text-align: center;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 3px solid #242424;
+  border-radius: 3px;
+  transition: 1s ease-in-out;
+}
+
+input[name="title"]:focus {
+  border-color: #969696;
+  width: 200px;
+  transition: 1s ease-in-out;
+  outline: none;
+}
+
+textarea[name="message"] {
+  width: 350px;
+  height: 200px;
+  resize: none;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+#noteCreate {
+  margin-top: 20px;
+  background: none;
+  border: 3px solid #969696;
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#noteCreate:hover {
+  background: #96e6b3;
+  color: #000;
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

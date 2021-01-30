@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S01ar Sys | Note Pad</title>
+        <link rel="stylesheet" href="note.css">
+    </head>
+    <body>
+        <style></style>
+
+        <div id="header">
+            <header>
+                <a onclick="window.location.assign('/')"><h1>S01ar Sys</h1></a>
+            </header>
+            <div id="nav">
+                <button id="navBtn"></button>
+                <div id="menu">
+                    <button id="navClose">X</button>
+                    <ul>
+                        <li>
+                            <a href="pwd.html"><i>Imagio</i>Pwd Manager</a>
+                        </li>
+                        <li>
+                            <a href="currency.html"><i>Imagio</i>Currency Conversion</a>
+                        </li>
+                        <li>
+                            <a href="note.html"><i>Imagio</i>Note Pad</a>
+                        </li>
+                        <li>
+                            <a href="measurement.html"><i>Imagio</i>Measurement Conversion</a>
+                        </li>
+                        <li id="settings">
+                            <a href="settings.html"><i>Imagio</i>Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Note Pad</h1>
+            <div id="notes">
+                <div class="note">
+                    <h2>Create note</h2>
+                    <input type="text" name="title" placeholder="Unamed note">
+                    <p class="helperText">message</p>
+                    <textarea name="message">example text ... 01110111 01101000 01111001 00100000 01100100 01101001 01100100 00100000 01111001 01101111 01110101 00100000 01110101 01110011 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01110000 01110010 01100101 01100011 01101001 01101111 01110101 01110011 00100000 01110100 01101001 01101101 01100101 00100000 01110100 01101111 00100000 01110100 01110010 01100001 01101110 01110011 01101100 01100001 01110100 01100101 00100000 01110100 01101000 01101001 01110011 00100000 01101101 01100101 01110011 01110011 01100001 01100111 01100101</textarea>
+                    <button id="noteCreate">Create</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="note.js"></script>
+</html>

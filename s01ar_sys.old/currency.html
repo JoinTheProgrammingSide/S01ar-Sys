@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S01ar Sys | Currency Conversion</title>
+        <link rel="stylesheet" href="currency.css">
+    </head>
+    <body>
+        <style>
+
+        </style>
+
+        <div id="header">
+            <header>
+                <a onclick="window.location.assign('/')"><h1>S01ar Sys</h1></a>
+            </header>
+            <div id="nav">
+                <button id="navBtn"></button>
+                <div id="menu">
+                    <button id="navClose">X</button>
+                    <ul>
+                        <li>
+                            <a href="pwd.html"><i>Imagio</i>Pwd Manager</a>
+                        </li>
+                        <li>
+                            <a href="currency.html"><i>Imagio</i>Currency Conversion</a>
+                        </li>
+                        <li>
+                            <a href="note.html"><i>Imagio</i>Note Pad</a>
+                        </li>
+                        <li>
+                            <a href="measurement.html"><i>Imagio</i>Measurement Conversion</a>
+                        </li>
+                        <li id="settings">
+                            <a href="settings.html"><i>Imagio</i>Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Currency Conversion</h1>
+            <div id="converter">
+                <select id="fromCurr" name="fromCurr">
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="HKD">Honkong Dollar</option>
+                    <option value="ISK">Icelandic Króna</option>
+                    <option value="PHP">Philippine Peso</option>
+                    <option value="DKK">Danish Krone</option>
+                    <option value="HUF">Hungarian Forint</option>
+                    <option value="CZK">Czech Koruna</option>
+                    <option value="GBP">Pound Sterling</option>
+                    <option value="RON">Romanian Leu</option>
+                    <option value="SEK">Swedish Krona</option>
+                    <option value="IDR">Indonesian Rupiah</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="RUB">Russian Ruble</option>
+                    <option value="HRK">Croatian Kuna</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="THB">Thai Baht</option>
+                    <option value="CHF">Swiss Frank</option>
+                    <option value="EUR">Euro</option>
+                    <option value="MYR">Malaysian Ringgit</option>
+                    <option value="BGN">Bulgarian Lev</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="NOK">Norwegian Krone</option>
+                    <option value="NZK">New Zealand Dollar</option>
+                    <option value="ZAR">South African Rand</option>
+                    <option value="USD">United States Dollar</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="SGD">Singapore Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="ILS">Israeli New Shekel</option>
+                    <option value="KRW">South Korean Won</option>
+                    <option value="PLN">Poland Złoty</option>
+                </select><br>
+                <select id="toCurr" name="toCurr">
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="HKD">Honkong Dollar</option>
+                    <option value="ISK">Icelandic Króna</option>
+                    <option value="PHP">Philippine Peso</option>
+                    <option value="DKK">Danish Krone</option>
+                    <option value="HUF">Hungarian Forint</option>
+                    <option value="CZK">Czech Koruna</option>
+                    <option value="GBP">Pound Sterling</option>
+                    <option value="RON">Romanian Leu</option>
+                    <option value="SEK">Swedish Krona</option>
+                    <option value="IDR">Indonesian Rupiah</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="RUB">Russian Ruble</option>
+                    <option value="HRK">Croatian Kuna</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="THB">Thai Baht</option>
+                    <option value="CHF">Swiss Frank</option>
+                    <option value="EUR">Euro</option>
+                    <option value="MYR">Malaysian Ringgit</option>
+                    <option value="BGN">Bulgarian Lev</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="NOK">Norwegian Krone</option>
+                    <option value="NZK">New Zealand Dollar</option>
+                    <option value="ZAR">South African Rand</option>
+                    <option value="USD">United States Dollar</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="SGD">Singapore Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="ILS">Israeli New Shekel</option>
+                    <option value="KRW">South Korean Won</option>
+                    <option value="PLN">Poland Złoty</option>
+                </select><br>
+                <input id="value" type="number" name="value" placeholder="value"><br>
+                <button id="calculateBtn" name="calculate">Calculate</button><br>
+                <textarea name="output" id="output" readonly>Output</textarea>
+            </div>
+        </div>
+
+        <script src="currency.js"></script>
+    </body>
+</html>

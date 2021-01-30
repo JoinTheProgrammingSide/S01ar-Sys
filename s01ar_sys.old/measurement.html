@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S01ar Sys | Measurement Conversion</title>
+        <link rel="stylesheet" href="measurement.css">
+    </head>
+    <body>
+        <style></style>
+
+        <div id="header">
+            <header>
+                <a onclick="window.location.assign('/')"><h1>S01ar Sys</h1></a>
+            </header>
+            <div id="nav">
+                <button id="navBtn"></button>
+                <div id="menu">
+                    <button id="navClose">X</button>
+                    <ul>
+                        <li>
+                            <a href="pwd.html"><i>Imagio</i>Pwd Manager</a>
+                        </li>
+                        <li>
+                            <a href="currency.html"><i>Imagio</i>Currency Conversion</a>
+                        </li>
+                        <li>
+                            <a href="note.html"><i>Imagio</i>Note Pad</a>
+                        </li>
+                        <li>
+                            <a href="measurement.html"><i>Imagio</i>Measurement Conversion</a>
+                        </li>
+                        <li id="settings">
+                            <a href="settings.html"><i>Imagio</i>Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Measurement Conversion</h1>
+            <div id="converter">
+                <input id="fromUnit" type="text" name="fromUnit" placeholder="initial unit"><br>
+                <input id="toUnit" type="text" name="toUnit" placeholder="final unit"><br>
+                <input id="value" type="number" name="value" placeholder="value"><br>
+                <button id="calculateBtn" name="calculate">Calculate</button><br>
+                <textarea name="output" id="output" readonly>Output</textarea>
+            </div>
+        </div>
+
+        <script src="measurement.js"></script>
+    </body>
+</html>
