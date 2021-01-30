@@ -6,6 +6,25 @@
 
 This is the repository that will be used for the team = {"name": "Join The Programming Side"}'s Timathon january 2021 entry
 
+---
+
+## Features
+
+- Password Manager
+- Live Currency Conversion
+- Note Pad
+- Measurement Conversion
+- Clip Board
+- Idk
+
+---
+
+## Usage
+
+You can use this web app by going to www.github.io/JoinTheProgrammingSide/s01ar-sys/index.html.
+
+---
+
 ## Installation
 
 Here are the instructions on how to install our S01ar Sys app.
