@@ -1,10 +1,11 @@
 # S01ar Sys
 
-[![Website](https://img.shields.io/badge/Website-https://github.io/JoinTheProgrammingSide-242424?style=for-the-badge)](https://github.io)
-![Platforms](https://img.shields.io/badge/Platforms-Windows%20%26%26%20Linux%20%26%26%20MacOs-242424?style=for-the-badge)
+[![Website](https://img.shields.io/badge/Website-https://JoinTheProgrammingSide.github.io-242424?style=for-the-badge)](https://jointheprogrammingside.github.io)
+![Platform](https://img.shields.io/badge/Platform-Web-242424?style=for-the-badge)
 ![LastCommit](https://img.shields.io/github/last-commit/JoinTheProgrammingSide/S01ar-Sys?color=242424&style=for-the-badge)
+![Discord](https://img.shields.io/discord/795329551432941608?color=242424&style=for-the-badge)
 
-This is the repository that will be used for the team = {"name": "Join The Programming Side"}'s Timathon january 2021 entry
+This is the repository that will be used for the team Join The Programming Side's Timathon january 2021 entry
 
 ---
 
@@ -15,7 +16,7 @@ This is the repository that will be used for the team = {"name": "Join The Progr
 - Note Pad
 - Measurement Conversion
 - Clip Board
-- Idk
+- Translation (may not me accurate)
 
 None of these features save changes, therefore are not fit to use as a replacement for other applications.
 
@@ -23,20 +24,14 @@ None of these features save changes, therefore are not fit to use as a replaceme
 
 ## Usage
 
-You can use this web app by going to www.github.io/JoinTheProgrammingSide/s01ar-sys/index.html.
+You can use this web app by going to https://www.JoinTheProgrammingSide.github.io/s01ar-sys/index.html.
 
 ---
 
-## Installation
+## Team
 
-Here are the instructions on how to install our S01ar Sys app.
+Programmer - BinduBunny https://www.github.com/BinduBunny
 
-### From Source
+Icon Designer - Maplechild https://www.instagram.com/maple_artist_
 
-    ???
-
-### From Release
-
-    ???
-
-## Features
+Team Discord - https://discord.gg/cgkHfKTgMM

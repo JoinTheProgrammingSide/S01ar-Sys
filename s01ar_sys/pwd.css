@@ -70,7 +70,7 @@ body {
   font-size: 72px;
 }
 
-#notes {
+#pwds {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -78,7 +78,7 @@ body {
   margin-bottom: 50px;
 }
 
-.note {
+.pwd {
   text-align: center;
   background-color: #484848;
   padding: 5px;
@@ -87,7 +87,17 @@ body {
   border-radius: 50px;
 }
 
-.note button {
+.pwd #warning {
+  color: lightcoral;
+}
+
+.pwd p {
+  margin: 30px;
+  text-align: justify;
+  font-family: Helvetica;
+}
+
+.pwd button {
   background: none;
   border: 3px solid #969696;
   border-radius: 20px;
@@ -97,14 +107,30 @@ body {
   padding: 0 10px 0 10px;
 }
 
-.note button:hover {
+.pwd button:hover {
   background-color: crimson;
   color: #000;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.pwd #copyBtn {
+  background: none;
+  border: 3px solid #969696;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.pwd #copyBtn:hover {
+  background-color: #96e6b3;
+  color: #000;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 @media only screen and (max-width: 1376px) {
-  #notes {
+  #pwds {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -113,10 +139,10 @@ body {
 }
 
 @media only screen and (max-width: 876px) {
-  #notes {
+  #pwds {
     display: block;
   }
-  .note {
+  .pwd {
     margin: 0 auto;
     margin-bottom: 10px;
   }
@@ -162,14 +188,7 @@ body {
   bottom: 0;
 }
 
-.helperText {
-  position: relative;
-  top: 12px;
-  font-size: 13px;
-  color: #969696;
-}
-
-input[name="title"] {
+input[name="name"] {
   width: 150px;
   text-align: center;
   background: none;
@@ -180,23 +199,32 @@ input[name="title"] {
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-input[name="title"]:focus {
+input[name="name"]:focus {
   border-color: #969696;
   width: 200px;
   outline: none;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-textarea[name="message"] {
-  width: 350px;
-  height: 200px;
-  resize: none;
+input[name="length"] {
+  width: 150px;
+  text-align: center;
   background: none;
   border: none;
   color: #fff;
+  border-bottom: 3px solid #242424;
+  border-radius: 3px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#noteCreate {
+input[name="length"]:focus {
+  border-color: #969696;
+  width: 200px;
+  outline: none;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#createBtn {
   margin-top: 20px;
   background: none;
   border: 3px solid #969696;
@@ -206,7 +234,7 @@ textarea[name="message"] {
   font-size: 20px;
 }
 
-#noteCreate:hover {
+#createBtn:hover {
   background: #96e6b3;
   color: #000;
   transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);

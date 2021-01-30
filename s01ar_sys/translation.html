@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>S01ar Sys | Measurement Conversion</title>
-        <link rel="stylesheet" href="measurement.css">
+        <title>S01ar Sys | Currency Conversion</title>
+        <link rel="stylesheet" href="translation.css">
     </head>
     <body>
-        <style></style>
+        <style>
+
+        </style>
 
         <div id="header">
             <header>
@@ -42,16 +44,30 @@
         </div>
 
         <div id="main">
-            <h1>Measurement Conversion</h1>
+            <h1>Currency Conversion</h1>
             <div id="converter">
-                <input id="fromUnit" type="text" name="fromUnit" placeholder="initial unit"><br>
-                <input id="toUnit" type="text" name="toUnit" placeholder="final unit"><br>
-                <input id="value" type="number" name="value" placeholder="value"><br>
+                <select id="fromLang" name="fromLang">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic (عربى)</option>
+                    <option value="zh">Chinese (中文)</option>
+                    <option value="fr">French (Français)</option>
+                    <option value="it">Italian (Italiano)</option>
+                    <option value="es">Spanish (Espanol)</option>
+                </select><br>
+                <select id="toLang" name="toLang">
+                    <option value="fr">French (Français)</option>
+                    <option value="ar">Arabic (عربى)</option>
+                    <option value="zh">Chinese (中文)</option>
+                    <option value="en">English</option>
+                    <option value="it">Italian (Italiano)</option>
+                    <option value="es">Spanish (Español)</option>
+                </select><br>
+                <textarea id="text" name="text" placeholder="Hello World!"></textarea><br>
                 <button id="calculateBtn" name="calculate">Calculate</button><br>
                 <textarea name="output" id="output" readonly>Output</textarea>
             </div>
         </div>
 
-        <script src="measurement.js"></script>
+        <script src="translation.js"></script>
     </body>
 </html>

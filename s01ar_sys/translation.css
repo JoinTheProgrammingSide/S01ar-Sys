@@ -6,6 +6,11 @@ body {
   color: #fff;
 }
 
+/* nicer outline */
+:focus {
+  outline: thin dotted;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -70,58 +75,6 @@ body {
   font-size: 72px;
 }
 
-#notes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  justify-items: center;
-  margin-bottom: 50px;
-}
-
-.note {
-  text-align: center;
-  background-color: #484848;
-  padding: 5px;
-  width: 400px;
-  height: 400px;
-  border-radius: 50px;
-}
-
-.note button {
-  background: none;
-  border: 3px solid #969696;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 0 10px 0 10px;
-}
-
-.note button:hover {
-  background-color: crimson;
-  color: #000;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-@media only screen and (max-width: 1376px) {
-  #notes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-items: center;
-  }
-}
-
-@media only screen and (max-width: 876px) {
-  #notes {
-    display: block;
-  }
-  .note {
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-}
-
 #menu {
   display: none;
   background-color: #969696;
@@ -136,13 +89,6 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background: none;
-  border: none;
-  margin: 10px;
-  font-size: 24px;
-  color: #fff;
-  font-weight: 1000;
-  cursor: pointer;
 }
 
 #menu ul {
@@ -162,52 +108,108 @@ body {
   bottom: 0;
 }
 
-.helperText {
-  position: relative;
-  top: 12px;
-  font-size: 13px;
-  color: #969696;
-}
-
-input[name="title"] {
-  width: 150px;
-  text-align: center;
+#menu button {
   background: none;
   border: none;
+  margin: 10px;
+  font-size: 24px;
   color: #fff;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#converter {
+  text-align: center;
+  background-color: #484848;
+  width: 40%;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 50px;
+}
+
+select[name="fromLang"] {
+  text-align: center;
+  height: 20px;
+  width: 150px;
+  margin-bottom: 30px;
+  background: #484848;
+  color: #fff;
+  border: none;
+}
+
+select[name="toLang"] {
+  text-align: center;
+  height: 20px;
+  width: 150px;
+  margin-bottom: 30px;
+  background: #484848;
+  color: #fff;
+  border: none;
+}
+
+textarea[name="text"] {
+  resize: none;
+  text-align: left;
+  height: 100px;
+  width: 200px;
+  margin-bottom: 30px;
+  background: none;
+  color: #fff;
+  border: none;
   border-bottom: 3px solid #242424;
   border-radius: 3px;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: transparent;
 }
 
-input[name="title"]:focus {
+textarea[name="text"]:focus {
   border-color: #969696;
-  width: 200px;
-  outline: none;
+  width: 300px;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-textarea[name="message"] {
-  width: 350px;
-  height: 200px;
-  resize: none;
+button[name="calculate"] {
+  margin-top: 30px;
+  background: none;
+  border: 3px solid #242424;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+button[name="calculate"]:hover {
+  border-color: #969696;
+  border-radius: 20px;
+  padding: 5px 30px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button[name="calculate"]:focus {
+  border-color: #969696;
+  border-radius: 20px;
+  padding: 5px 30px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+textarea[name="output"] {
   background: none;
   border: none;
+  border: 3px solid #242424;
+  border-radius: 10px;
   color: #fff;
-}
-
-#noteCreate {
-  margin-top: 20px;
-  background: none;
-  border: 3px solid #969696;
-  border-radius: 20px;
-  padding: 0 10px 0 10px;
-  color: #fff;
-  font-size: 20px;
-}
-
-#noteCreate:hover {
-  background: #96e6b3;
-  color: #000;
-  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 18px;
+  overflow: hidden;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3;
+  resize: none;
+  height: 50px;
+  width: 200px;
+  position: relative;
+  top: 60px;
+  outline: none;
 }

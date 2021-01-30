@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>S01ar Sys | Clip Board</title>
-        <link rel="stylesheet" href="clipboard.css">
+        <title>S01ar Sys | Pwd Manager</title>
+        <link rel="stylesheet" href="pwd.css">
     </head>
     <body>
         <style></style>
@@ -42,15 +42,18 @@
         </div>
 
         <div id="main">
-            <h1>Clip Board</h1>
-            <div id="clips">
-                <div class="clip">
-                    <p>To create a clip item just copy the text you want to input and click on the Paste button below and a clip item will appear.</p>
-                    <button id="pasteBtn">Paste</button>
+            <h1>Pwd Manager</h1>
+            <div id="pwds">
+                <div class="pwd">
+                    <h2>Create Login</h2>
+                    <p>To create a login enter the name wanted, click the create button and enjoy your randomly created password <span id="warning">(please be careful this website has no garanty for security and passwords are not saved so if you reload or leave the website they will disappear)</span></p>
+                    <input type="text" name="name" placeholder="Unamed Login"><br>
+                    <input type="number" name="length" placeholder="24"><br>
+                    <button id="createBtn">Create</button>
                 </div>
             </div>
         </div>
 
-        <script src="clipboard.js"></script>
+        <script src="pwd.js"></script>
     </body>
 </html>

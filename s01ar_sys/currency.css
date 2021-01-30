@@ -137,7 +137,6 @@ select[name="fromCurr"] {
   background: #484848;
   color: #fff;
   border: none;
-  outline: transparent;
 }
 
 select[name="toCurr"] {
@@ -148,7 +147,6 @@ select[name="toCurr"] {
   background: #484848;
   color: #fff;
   border: none;
-  outline: transparent;
 }
 
 input[name="value"] {
