@@ -70,6 +70,11 @@ body {
   font-size: 72px;
 }
 
+#main h1 span {
+  font-family: "Courier New";
+  text-decoration: underline;
+}
+
 #features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
