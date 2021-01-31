@@ -32,6 +32,6 @@ You can use this web app by going to https://www.JoinTheProgrammingSide.github.i
 
 Programmer - BinduBunny https://www.github.com/BinduBunny
 
-Icon Designer - Maplechild https://www.instagram.com/maple_artist_
+Icon Designer - Maplechild https://www.instagram.com/maple_artist_/
 
 Team Discord - https://discord.gg/cgkHfKTgMM
