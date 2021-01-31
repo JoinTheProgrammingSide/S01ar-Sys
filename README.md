@@ -24,7 +24,7 @@ None of these features save changes, therefore are not fit to use as a replaceme
 
 ## Usage
 
-You can use this web app by going to https://www.JoinTheProgrammingSide.github.io/s01ar-sys/.
+You can use this web app by going to https://jointheprogrammingside.github.io/s01ar_sys/.
 
 ---
 
