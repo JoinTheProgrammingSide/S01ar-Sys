@@ -42,6 +42,12 @@ body {
   cursor: pointer;
 }
 
+#header header h1 img {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
 #header #nav #navBtn {
   position: fixed;
   top: 30px;
@@ -92,8 +98,14 @@ body {
 }
 
 #menu ul {
-  margin-top: 30px;
+  margin-top: 70px;
   list-style-type: none;
+}
+
+#menu ul li {
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 #menu ul li a {
@@ -101,6 +113,12 @@ body {
   color: #121212;
   font-size: 20px;
   line-height: 2;
+}
+
+#menu ul li a img {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 #menu ul #settings {

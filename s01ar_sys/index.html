@@ -5,11 +5,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>S01ar Sys</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="./imgs/favicon.ico">
     </head>
     <body>
         <style>
 
         </style>
+
+        <div id="main">
+            <h1>Welcome to the <span>S01ar Sys</span> project!</h1>
+
+            <div id="features">
+                <div class="feature" id="pwdMan">
+                    <h2>Pwd Manager</h2>
+                    <p>Here you can create, store and view secure passwords.</p>
+                    <button id="pwdBtn" onclick="window.location='pwd.html'"><img src="./imgs/pwd.png" alt="pwd manager" id="pwdLogo"></button>
+                </div>
+                <div class="feature" id="currConv">
+                    <h2>Currency Conversion</h2>
+                    <p>Here you can convert from a currency to an other.</p>
+                    <button id="currBtn" onclick="window.location='currency.html'"><img src="./imgs/currency.png" alt="currency conversion" id="currLogo"></button>
+                </div>
+                <div class="feature" id="notePad">
+                    <h2>Note Pad</h2>
+                    <p>Here you can write and view notes.</p>
+                    <button id="noteBtn" onclick="window.location='note.html'"><img src="./imgs/note.png" alt="note pad" id="noteLogo"></button>
+                </div>
+                <div class="feature" id="measurementConversion">
+                    <h2>Measurement Conversion</h2>
+                    <p>Here you can convert from a measurement unit to an other.</p>
+                    <button id="measurementBtn" onclick="window.location='measurement.html'"><img src="./imgs/measurement.png" alt="measurement conversion" id="measurementLogo" ></button>
+                </div>
+                <div class="feature" id="clipBoard">
+                    <h2>Clip Board</h2>
+                    <p>Here you can paste and copy any text you want.</p>
+                    <button id="clipBtn" onclick="window.location='clipboard.html'"><img src="./imgs/clipboard.png" alt="clip board" id="clipLogo"></button>
+                </div>
+                <div class="feature" id="translation">
+                    <h2>Translation</h2>
+                    <p>Here you can translate text from a language to an other, although this is not always accurate.</p>
+                    <button id="translateBtn" onclick="window.location='translation.html'"><img src="./imgs/translator.png" alt="translation" id="translateLogo"></button>
+                </div>
+            </div>
+        </div>
 
         <div id="header">
             <header>
@@ -21,65 +59,27 @@
                     <button id="navClose">X</button>
                     <ul>
                         <li>
-                            <a href="pwd.html"><i>Imagio</i>Pwd Manager</a>
+                            <a href="pwd.html"><img src="./imgs/pwd.png">Pwd Manager</a>
                         </li>
                         <li>
-                            <a href="currency.html"><i>Imagio</i>Currency Conversion</a>
+                            <a href="currency.html"><img src="./imgs/currency.png">Currency Conversion</a>
                         </li>
                         <li>
-                            <a href="note.html"><i>Imagio</i>Note Pad</a>
+                            <a href="note.html"><img src="./imgs/note.png">Note Pad</a>
                         </li>
                         <li>
-                            <a href="measurement.html"><i>Imagio</i>Measurement Conversion</a>
+                            <a href="measurement.html"><img src="./imgs/measurement.png">Measurement Conversion</a>
                         </li>
                         <li>
-                            <a href="translation.html"><i>Imagio</i>Translation</a>
+                            <a href="translation.html"><img src="./imgs/translator.png">Translation</a>
                         </li>
                         <li id="settings">
-                            <a href="settings.html"><i>Imagio</i>Settings</a>
+                            <a href="settings.html"><img src="./imgs/settings.png">Settings</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
-        <div id="main">
-            <h1>Welcome to the <span>S01ar Sys</span> project!</h1>
-
-            <div id="features">
-                <div class="feature" id="pwdMan">
-                    <h2>Pwd Manager</h2>
-                    <p>Here you can create, store and view secure passwords.</p>
-                    <button id="pwdLogo" onclick="window.location='pwd.html'">Pwd Logo</button>
-                </div>
-                <div class="feature" id="currConv">
-                    <h2>Currency Conversion</h2>
-                    <p>Here you can convert from a currency to an other.</p>
-                    <button id="currLogo" onclick="window.location='currency.html'">Currency Logo</button>
-                </div>
-                <div class="feature" id="notePad">
-                    <h2>Note Pad</h2>
-                    <p>Here you can write and view notes.</p>
-                    <button id="noteLogo" onclick="window.location='note.html'">Note Logo</button>
-                </div>
-                <div class="feature" id="measurementConversion">
-                    <h2>Measurement Conversion</h2>
-                    <p>Here you can convert from a measurement unit to an other.</p>
-                    <button id="measurementLogo" onclick="window.location='measurement.html'">Measure Logo</button>
-                </div>
-                <div class="feature" id="clipBoard">
-                    <h2>Clip Board</h2>
-                    <p>Here you can paste and copy any text you want.</p>
-                    <button id="clipLogo" onclick="window.location='clipboard.html'">Clip Board</button>
-                </div>
-                <div class="feature" id="clipboard">
-                    <h2>Translation</h2>
-                    <p>Here you can translate text from a language to an other, although this is not always accurate.</p>
-                    <button id="translateLogo" onclick="window.location='translation.html'">Translate</button>
-                </div>
-            </div>
-        </div>
-
 
         <script src="main.js"></script>
     </body>

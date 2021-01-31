@@ -113,7 +113,31 @@ body {
   border: none;
   color: #fff;
   cursor: pointer;
-  vertical-align: bottom;
+  position: relative;
+}
+
+.feature button img {
+  height: 100px;
+}
+
+.feature #currBtn {
+  bottom: 44px;
+}
+
+.feature #noteBtn {
+  top: 44px;
+}
+
+.feature #measurementBtn {
+  bottom: 44px;
+}
+
+.feature #clipBtn {
+  top: 44px;
+}
+
+.feature #translateBtn {
+  bottom: 44px;
 }
 
 @media only screen and (max-width: 1376px) {
@@ -152,8 +176,14 @@ body {
 }
 
 #menu ul {
-  margin-top: 30px;
+  margin-top: 70px;
   list-style-type: none;
+}
+
+#menu ul li {
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 #menu ul li a {
@@ -161,6 +191,12 @@ body {
   color: #121212;
   font-size: 20px;
   line-height: 2;
+}
+
+#menu ul li a img {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 #menu ul #settings {
