@@ -129,44 +129,28 @@ body {
   border-radius: 50px;
 }
 
-input[name="fromUnit"] {
+select[name="fromUnit"] {
   text-align: center;
-  height: 15px;
+  height: 20px;
   width: 150px;
   margin-bottom: 30px;
-  background: none;
+  background: #484848;
   color: #fff;
   border: none;
   border-bottom: 3px solid #242424;
   border-radius: 3px;
-  outline: transparent;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-input[name="fromUnit"]:focus {
-  border-color: #969696;
-  width: 200px;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-input[name="toUnit"] {
+select[name="toUnit"] {
   text-align: center;
-  height: 15px;
+  height: 20px;
   width: 150px;
   margin-bottom: 30px;
-  background: none;
+  background: #484848;
   color: #fff;
   border: none;
   border-bottom: 3px solid #242424;
   border-radius: 3px;
-  outline: transparent;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-input[name="toUnit"]:focus {
-  border-color: #969696;
-  width: 200px;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 input[name="value"] {

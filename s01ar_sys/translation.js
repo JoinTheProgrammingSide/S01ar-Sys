@@ -1,7 +1,7 @@
 const navBtn = document.querySelector("#navBtn");
 const styling = document.querySelector("style");
 const navClose = document.querySelector("#navClose");
-const calcBtn = document.querySelector("#calculateBtn");
+const translateBtn = document.querySelector("#translateBtn");
 const fromLangSelect = document.querySelector("#fromLang");
 const toLangSelect = document.querySelector("#toLang");
 const fromText = document.querySelector("#text");
@@ -17,7 +17,7 @@ function navHide() {
   styling.innerHTML = "";
 }
 
-calcBtn.addEventListener("click", calculate);
+translateBtn.addEventListener("click", calculate);
 function calculate() {
   const Url = `https://api.mymemory.translated.net/get?q=${fromText.value}&langpair=${fromLangSelect.value}|${toLangSelect.value}`;
   fetch(Url)
