@@ -5,7 +5,7 @@
 ![LastCommit](https://img.shields.io/github/last-commit/JoinTheProgrammingSide/S01ar-Sys?color=242424&style=for-the-badge)
 ![Discord](https://img.shields.io/discord/795329551432941608?color=242424&style=for-the-badge)
 
-This is the repository that will be used for the team Join The Programming Side's Timathon january 2021 entry
+The S01ar Sys virtual assistant is a web application designed for productivity and helping you with everyday tasks like password managing, currency conversion, note taking, measurement conversion, copy and pasting and translation.
 
 ---
 
