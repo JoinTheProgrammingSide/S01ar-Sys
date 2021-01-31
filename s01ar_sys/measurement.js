@@ -42,7 +42,7 @@ function calculate() {
   } else if (fromUnit.value === "km") {
     num = value.value * 1000;
   } else if (fromUnit.value === "in") {
-    num = value.value / 254;
+    num = value.value / 39.37;
   } else if (fromUnit.value === "ft") {
     num = value.value / 3.28;
   } else if (fromUnit.value === "mi") {
